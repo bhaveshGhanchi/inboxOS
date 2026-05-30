@@ -51,6 +51,8 @@ AI-powered Gmail workspace for intelligent email management and productivity.
 ```bash
 cd apps/api
 source venv/bin/activate
+brew services start postgresql@16
+brew services stop postgresql@16
 uvicorn app.main:app --reload
 ```
 
